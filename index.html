@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="John Jeremy Lintag's personal portfolio">
+    <title>John Jeremy Lintag | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Custom virus cursor -->
+    <div class="cursor-core" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="#home" class="logo">
+            <img src="cdm-logo.jpg" alt="School logo" class="school-logo">
+            <span>My Portfolio</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav class="navbar" id="navbar" aria-label="Main navigation">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button id="themeToggle" class="theme-toggle"
+                    type="button" aria-label="Switch color theme">☀️</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section id="home" class="home section">
+            <div class="home-content">
+                <p class="eyebrow">WELCOME TO MY PERSONAL WEBSITE</p>
+
+                <h1>
+                    Hello, I'm
+                    <span class="highlight">John Jeremy Lintag</span>
+                </h1>
+
+                <h2 id="changingGreeting">Aspiring Developer</h2>
+
+                <p class="home-description">
+                    I am a Computer Studies student who enjoys technology,
+                    coding, and creating useful digital experiences.
+                </p>
+
+                <div class="home-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Projects</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- Circular portrait ONLY -->
+            <div class="home-image">
+                <div class="profile-frame">
+                    <img src="profile.png" alt="Portrait of John Jeremy Lintag">
+                </div>
+                <span class="floating-label">Future Developer</span>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section about">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span class="highlight">Me</span></h2>
+                <p>A little information about my journey and interests.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>My Journey in Technology</h3>
+
+                    <p>
+                        I am a Computer Studies student at Colegio de Montalban
+                        (ICS) passionate about technology, web design, and software
+                        development. My mission is to build digital tools and
+                        applications that create real value and simplify complex
+                        problems. Through academic projects and continuous learning,
+                        I've honed my skills across front-end design, back-end API
+                        development, and data management using modern software stacks.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat-card">
+                            <h3>2 Years</h3>
+                            <p>of Coding</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>3+</h3>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>ICS</h3>
+                            <p>Department</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portrait slideshow -->
+                <div class="about-gallery">
+                    <div class="about-slideshow" id="aboutSlideshow">
+                        <img src="slideshow/photo1.jpg" class="slide active"
+                             alt="Slideshow photo 1">
+                        <img src="slideshow/photo2.jpg" class="slide"
+                             alt="Slideshow photo 2">
+                        <img src="slideshow/photo3.jpg" class="slide"
+                             alt="Slideshow photo 3">
+                        <img src="slideshow/photo4.jpg" class="slide"
+                             alt="Slideshow photo 4">
+                        <img src="slideshow/photo5.jpg" class="slide"
+                             alt="Slideshow photo 5">
+                        <img src="slideshow/photo6.jpg" class="slide"
+                             alt="Slideshow photo 6">
+                    </div>
+
+                    <div class="slideshow-controls">
+                        <button id="previousSlide" type="button"
+                                aria-label="Previous photo">❮</button>
+                        <div class="slide-dots" id="slideDots"></div>
+                        <button id="nextSlide" type="button"
+                                aria-label="Next photo">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section skills-section">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I AM LEARNING</p>
+                <h2>My <span class="highlight">Skills</span></h2>
+                <p>Technologies and abilities I continue to develop.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- 1. Frontend Development -->
+                <article class="info-card">
+                    <span class="card-icon">🌐</span>
+                    <h3>Frontend Development</h3>
+                    <p>Designing responsive layouts and interactive visual user interfaces.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </article>
+
+                <!-- 2. Databases & Tools -->
+                <article class="info-card">
+                    <span class="card-icon">🗄️</span>
+                    <h3>Databases & Tools</h3>
+                    <p>Development editors and compilation environments used in coding.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Sublime Text</span>
+                        <span class="skill-tag">Online GDB</span>
+                        <span class="skill-tag">Visual Studio Code</span>
+                    </div>
+                </article>
+
+                <!-- 3. Soft Skills -->
+                <article class="info-card">
+                    <span class="card-icon">💻</span>
+                    <h3>Soft Skills</h3>
+                    <p>Core professional traits for effective teamwork and innovation.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Team Work</span>
+                        <span class="skill-tag">Agile Mindset</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">MY WORK</p>
+                <h2>My <span class="highlight">Projects</span></h2>
+                <p>Examples of projects I have practiced or developed.</p>
+            </div>
+
+            <div class="card-grid">
+                <!-- Card 1: Arcade Hub -->
+                <article class="info-card project-card">
+                    <span class="card-icon">🕹️</span>
+                    <p class="project-tag">RETRO ARCADE ZONE</p>
+                    <h3>Multi-Game Arcade Hub</h3>
+                    <p>Play Cosmic Raptor Jump, Tic-Tac-Toe (XOX), and Slither.io in an interactive gaming hub.</p>
+                    <a class="text-link" onclick="openArcadeModal('raptor')">Open Arcade Hub ↗</a>
+                </article>
+
+                <!-- Card 2: Social Media (With Facebook Links) -->
+                <article class="info-card project-card">
+                    <span class="card-icon">📢</span>
+                    <p class="project-tag">SOCIAL MEDIA</p>
+                    <h3>Social Media</h3>
+                    <p>Official school pages and campus updates on Facebook.</p>
+                    <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 8px;">
+                        <a href="https://www.facebook.com/official.colegiodemontalban" target="_blank" rel="noopener noreferrer" class="text-link" style="margin: 0; font-size: 0.9rem;">Official Colegio Page 1 ↗</a>
+                        <a href="https://www.facebook.com/profile.php?id=61594990175976" target="_blank" rel="noopener noreferrer" class="text-link" style="margin: 0; font-size: 0.9rem;">Official Colegio Page 2 ↗</a>
+                    </div>
+                </article>
+
+                <!-- Card 3: My Work (Student Management System) -->
+                <article class="info-card project-card">
+                    <span class="card-icon">🧩</span>
+                    <p class="project-tag">PYTHON SCRIPTING</p>
+                    <h3>My Work</h3>
+                    <p>A Student Management & Attendance Tracking System built with Python and JSON storage.</p>
+                    <span class="text-link">Python Application</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="section-heading">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Contact <span class="highlight">Me</span></h2>
+                <p>Have a question or an idea? Send me a message or reach out directly.</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Direct Contact Information Cards -->
+                <div class="contact-details">
+                    <div class="contact-card">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>Email Me</h4>
+                            <a href="mailto:jeremyjohnlintag@gmail.com" class="text-link" style="margin: 0;">jeremyjohnlintag@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Call / Text</h4>
+                            <a href="tel:09393565724" class="text-link" style="margin: 0;">09393565724</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <span class="contact-icon">🌐</span>
+                        <div>
+                            <h4>Facebook Profile</h4>
+                            <a href="https://www.facebook.com/profile.php?id=61592340915460" target="_blank" rel="noopener noreferrer" class="text-link" style="margin: 0;">John Jeremy Lintag ↗</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form id="contactForm" class="contact-form">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="name"
+                           placeholder="Enter your name" required>
+
+                    <label for="contactEmail">Your Email</label>
+                    <input type="email" id="contactEmail" name="email"
+                           placeholder="Enter your email" required>
+
+                    <label for="contactMessage">Your Message</label>
+                    <textarea id="contactMessage" name="message" rows="5"
+                              placeholder="Write your message..." required></textarea>
+
+                    <button type="submit" class="btn primary-btn">Prepare Email</button>
+
+                    <p class="form-note">
+                        Your email application will open so you can review and send your message.
+                    </p>
+                    <p id="formStatus" class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© <span id="currentYear"></span> John Jeremy Lintag. All rights reserved.</p>
+        <a href="#home">Back to Top ↑</a>
+    </footer>
+
+    <!-- SIDE POP-UP MESSAGE NOTIFICATION TOAST -->
+    <div id="sideToast" class="side-toast">
+        <div class="toast-header">
+            <span>✉️ Message Sent Preview</span>
+            <button class="toast-close" onclick="closeToast()">✕</button>
+        </div>
+        <div class="toast-body">
+            <p><strong>From:</strong> <span id="toastName"></span></p>
+            <p><strong>Email:</strong> <span id="toastEmail"></span></p>
+            <p><strong>Message:</strong> <span id="toastMsg"></span></p>
+        </div>
+    </div>
+
+    <!-- MULTI-GAME ARCADE MODAL -->
+    <div id="gameModal" class="game-modal">
+        <div class="game-modal-content">
+            <button class="close-modal-btn" onclick="closeGameModal()">✕ Close</button>
+            
+            <div class="arcade-tabs">
+                <button id="tab-raptor" class="arcade-tab-btn active" onclick="switchGameTab('raptor')">🦖 Cosmic Raptor</button>
+                <button id="tab-ttt" class="arcade-tab-btn" onclick="switchGameTab('ttt')">❌ Tic-Tac-Toe (XOX)</button>
+                <button id="tab-slither" class="arcade-tab-btn" onclick="switchGameTab('slither')">🐍 Slither Arena</button>
+            </div>
+
+            <!-- View 1: Cosmic Raptor -->
+            <div id="view-raptor" class="arcade-view active">
+                <canvas id="spaceCanvas" style="display: block; width: 100%; height: 100%; background: #060913;"></canvas>
+            </div>
+
+            <!-- View 2: Tic-Tac-Toe (XOX) -->
+            <div id="view-ttt" class="arcade-view">
+                <div class="tictactoe-container">
+                    <div id="tttStatus" class="ttt-status">Player X's Turn</div>
+                    <div id="tttGrid" class="ttt-grid"></div>
+                    <button class="btn primary-btn" style="width: auto; padding: 8px 20px; font-size: 0.9rem;" onclick="initTicTacToe()">Restart Game</button>
+                </div>
+            </div>
+
+            <!-- View 3: Slither.io Arena -->
+            <div id="view-slither" class="arcade-view">
+                <canvas id="slitherCanvas" style="display: block; width: 100%; height: 100%; background: #050811;"></canvas>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
